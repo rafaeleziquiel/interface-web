@@ -1,0 +1,196 @@
+body {
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+
+h2 {
+    display: inline;
+    text-align: left;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.required_notification,
+#errorMessages {
+    font-size: 14px;
+    color: #ff0000;
+    margin: 5px 0 0 0;
+}
+
+.required_notification {
+    display: inline;
+    float: right;
+    margin-right:10px;
+}
+
+#errorMessages {
+    clear: both;
+    padding: 10px 0 0 0;
+}
+
+#errorMessages {
+    border-bottom: 1px solid #777;
+}
+
+#frmCadastro {
+    margin-bottom: 0px;
+}
+
+#frmLogin {
+    border-bottom: 1px solid #777;
+}
+
+#frmCadastro{
+    text-align: center;   
+}
+#frmLogin ul,
+#frmCadastro ul {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+}
+
+#frmLogin li{
+    padding: 12px;
+}
+#frmCadastro li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+#frmCadastro input[type="text"], #frmCadastro textarea{
+    float: left;
+}
+
+label {
+    text-align: left;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 5px 8px;
+}
+textarea{
+    width: 80%;
+    padding: 5px 8px;
+}
+input[type="text"]#txtDataExec{
+    width: 100px;
+}
+
+.clr{
+    clear: both;
+}
+
+input[type="button"],
+input[type="submit"],
+{
+    width: 100px;
+    padding: 5px 8px;
+}
+
+#tblLista {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    border-top: 1px solid #777;
+}
+
+#tblLista td,
+#tblLista th {
+    border-bottom: 1px solid #eee;
+}
+
+#tblLista tbody tr td:first-child {
+    width: 10%;
+}
+
+#tblLista tbody tr td:last-child {
+    width: 15%;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+.btnEdit,
+.btnDelete,
+.btnSearch {
+    margin: 0 20px;
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.btnEdit {
+    background-image: url("../img/update.png");
+}
+
+.btnDelete {
+    background-image: url("../img/delete.png");
+}
+
+.btnSearch {
+    margin-top: 4px;
+    background-image: url("../img/search.png");
+    float: right;
+}
+.btnLogoff{
+    float: right;
+}
+
+input.required, textarea.required {
+    border: solid 1px #ff0000;
+    padding: 6px 9px;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+.actions {
+    border-top: 1px solid #777;
+    padding-top: 20px;
+}
+
+.search {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 400px;
+}
+
+.search label {
+    width: 80px;
+    float: none;
+}
+
+.search #txtPesquisa {
+    width: 250px;
+}
+
+.newTask {
+    float: left;
+    margin: 6px;
+}

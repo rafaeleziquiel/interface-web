@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefas SPA</title>
+    <meta name="description" content="Interface web para efetuar o crud de tarefas">
+    <meta name="keywords" content="Interface web, tarefas">
+    <meta name="author" content="Rafael Eziquiel Bortoletto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/Tarefa.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tarefas</h2>
+        <input type="button" value="Sair" class="btnLogoff" onclick="logoff();" />
+        <span class="required_notification">* Campos obrigatórios</span>        
+        <ul id="errorMessages"></ul>
+        <form id="frmCadastro" action="" method="post">
+            <ul>
+                <li>
+                    <label for="txtTitulo" onclick="tasks.teste();">Título:</label>
+                    <input  type="text" id="txtTitulo" name="txtTitulo" required/>
+                    <div class="clr"></div>
+                </li>
+                <li>
+                    <label for="txtDesc">Descrição:</label>
+                    <textarea  type="text" id="txtDesc" name="txtDesc" required></textarea>
+                    <div class="clr"></div>
+                </li>
+                <li>
+                    <label for="txtDataExec">Data de execução:</label>
+                    <input  type="text" id="txtDataExec" name="txtDataExec" onKeyDown="return formatDate(this,'##/##/####',event);" placeholder="mm/dd/yyyy" required/>
+                    <div class="clr"></div>
+                </li>
+                <li>
+                    <input type="button" value="Cancelar" id="btnCancel" onclick="tasks.cancelTask(this.form)" />
+                    <input type="button" value="Salvar" id="btnSave" onclick="tasks.eventSubmitTask(this.form)" />
+                </li>
+            </ul>
+        </form>
+        <div class="actions">
+            <div class="newTask"><input type='button' value='Nova Tarefa' onclick="tasks.newTask()"></div>
+            <div class="search">
+                <form id="frmPesquisa" action="" method="post">
+                    <label for="txtPesquisa">Pesquisar:</label>
+                    <input type="text" id="txtPesquisa" name="txtPesquisa" required/>
+                    <div id='search' class='btnSearch' onclick='tasks.search()'></div>
+                </form>
+            </div>
+        </div>
+        <table id="tblLista"> </table>
+    </div>
+
+</body>
+
+</html>

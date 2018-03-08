@@ -1,0 +1,37 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login SPA</title>
+    <meta name="description" content="Interface web para autenticar o usuário">
+    <meta name="keywords" content="interface web, autenticação">
+    <meta name="author" content="Rafael Eziquiel Bortoletto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/Usuario.js"></script>
+</head>
+
+<body>
+    <div class="login">
+        <h2>Login</h2><span class="required_notification">* Campos obrigatórios</span>
+        <ul id="errorMessages"></ul>
+        <form id="frmLogin" action="" method="post">
+            <ul>
+                <li>
+                    <label for="username">Usuário: </label>
+                    <input type="text" id="txtUsername" value="" required/>
+                </li>
+                <li>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="txtPassword" value="" required/>
+                </li>
+                <li>
+                    <input type="button" onclick="user.validateForm()" value="Entrar" />
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
